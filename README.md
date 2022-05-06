@@ -4,8 +4,11 @@ Portafolio hecho en html con, css, js y scss.
 
 <h3>Carácteristicas del portafolio:</h3>
 - Responsive.
+
 - Modo oscuro y claro.
+
 - Contacto.
+
 - Descarga de hoja de vida.
 
 
