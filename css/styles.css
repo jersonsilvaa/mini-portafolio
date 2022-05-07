@@ -441,51 +441,6 @@ body.dark-theme {
   background-color: hsl(var(--hue), 8%, 44%);
 }
 
-/*================== MODAL ==================*/
-.modal {
-  width: 100%;
-  position: fixed;
-  inset: 0;
-  background: #0000005d;
-  display: flex;
-  transition: transform .5s;
-  transform: translate(100%);
-}
-
-.modal:target {
-  transform: translate(0);
-}
-
-.modal__container {
-  position: relative;
-  width: 80%;
-  height: 60%;
-  background-color: #fff;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal__title {
-  text-align: center;
-  font-size: 3rem;
-}
-
-.modal__close {
-  position: absolute;
-  background-color: crimson;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {

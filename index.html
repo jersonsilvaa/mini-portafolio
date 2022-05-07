@@ -62,12 +62,7 @@
                 <a target="_blank" href="./pdf/hoja de vida.pdf" class="button">
                     Descargar CV <i class="ri-download-line"></i>
                 </a>
-                <section class="modal" id="modal">
-                    <div class="modal__container">
-                        <h2 class="modal__title">Contacto</h2>
-                        <a href="#" class="modal__close">X</a>
-                    </div>
-                </section>
+
                 <div class="profile__buttons-small">
                     <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=3003683126&text=Hola, ¿Me darías más información sobre tu trabajo?" class="button button__small button__gray"><i class="ri-whatsapp-line"></i></a>
                     
@@ -75,7 +70,7 @@
                     
                     <a target="_blank" rel="noopener noreferrer" href="https://m.me/loquendero9/" class="button button__small button__gray"><i class="ri-messenger-line"></i></a>
 
-                    <a rel="noopener noreferrer" href="#modal" class="button button__small button__gray"><i class="ri-mail-line"></i></a>
+                    <a rel="noopener noreferrer" href="#" class="button button__small button__gray"><i class="ri-mail-line"></i></a>
                 </div>
             </div>
 
@@ -88,8 +83,6 @@
                 <button class="filters__button filter-tab-active" data-target="#proyectos">Proyectos</button>
 
                 <button class="filters__button" data-target="#habilidades">Habilidades</button>
-
-                <button class="filters__button" data-target="#habilidades">Sobre mi</button>
             </ul>
 
             <div class="filters__sections">
@@ -229,6 +222,23 @@
                 </div>
             </div>
         </section>
+        <br><br>
+        <div>
+            <h1 class="skills__title">Contactáme</h1>
+            <form action="https://formsubmit.co/jerson.silva99@hotmail.com" method="post" class="skills__title">
+                <label for="nombres y apellidos">Nombres y apellidos:</label>
+                <input type="text" name="Nombres y apellidos" class="form__name">
+                <br/>
+                <label for="email">Correo:</label>
+                <input type="email" name="Correo" class="form__email">
+                <br/>
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" class="mensaje" cols="30" rows="10"></textarea>
+                <br/>
+                <input type="submit" value="Enviar" class="button">
+            </form>
+
+        </div>
     </main>
 
     <footer class="footer container">
@@ -236,8 +246,6 @@
             © DevSilva. Todos los derechos reservados
         </span>
     </footer>
-    
-    <script src=""></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
