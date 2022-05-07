@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <title>Website mini portafolio - DevSilva</title>
+    <title>Web-portafolio - DevSilva</title>
 </head>
 <body>
     <header class="profile container">
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
         <div class="profile__container grid">
             <div class="profile__data">
                 <div class="profile__border">
@@ -20,17 +21,220 @@
                 </div>
 
                 <h2 class="profile__name">Jerson Silva</h2>
-                <h3 class="profile__profession">Fronted Developer</h3>
+                <h3 class="profile__profession">Desarrollador Fronted</h3>
+
+                <ul class="profile__social">
+                    <a href="https://www.instagram.com/luiger_hd/" target="_blank" class="profile__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank" class="profile__social-link">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+
+                    <a href="https://github.com/jersonsilvaa" target="_blank" class="profile__social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/jerson-david-silva-arjona-460b62238/" target="_blank" class="profile__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                </ul>
             </div>
+
+            <div class="profile__info grid">
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">1</h3>
+                    <p class="profile__info-description">Mes estudiando</p>
+                </div>
+
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">10</h3>
+                    <p class="profile__info-description">Proyectos hechos</p>
+                </div>
+
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">1</h3>
+                    <p class="profile__info-description">Cliente satisfecho</p>
+                </div>
+            </div>
+            <div class="profile__buttons">
+                <a target="_blank" href="./pdf/hoja de vida.pdf" class="button">
+                    Descargar CV <i class="ri-download-line"></i>
+                </a>
+                <section class="modal" id="modal">
+                    <div class="modal__container">
+                        <h2 class="modal__title">Contacto</h2>
+                        <a href="#" class="modal__close">X</a>
+                    </div>
+                </section>
+                <div class="profile__buttons-small">
+                    <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=3003683126&text=Hola, ¿Me darías más información sobre tu trabajo?" class="button button__small button__gray"><i class="ri-whatsapp-line"></i></a>
+                    
+                    <a target="_blank" rel="noopener noreferrer" href="https://t.me/DevSilva" class="button button__small button__gray"><i class="ri-telegram-line"></i></a>
+                    
+                    <a target="_blank" rel="noopener noreferrer" href="https://m.me/loquendero9/" class="button button__small button__gray"><i class="ri-messenger-line"></i></a>
+
+                    <a rel="noopener noreferrer" href="#modal" class="button button__small button__gray"><i class="ri-mail-line"></i></a>
+                </div>
+            </div>
+
         </div>
     </header>
 
     <main class="main">
+        <section class="filters container">
+            <ul class="filters__content">
+                <button class="filters__button filter-tab-active" data-target="#proyectos">Proyectos</button>
 
+                <button class="filters__button" data-target="#habilidades">Habilidades</button>
+
+                <button class="filters__button" data-target="#habilidades">Sobre mi</button>
+            </ul>
+
+            <div class="filters__sections">
+                <div class="projects__content grid filters__active" data-content id="proyectos">
+                    <article class="projects__card">
+                        <img src="./img/proyecto1.png" alt="Proyecto sistema de prevención contra el coronavirus" class="projects__img">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">Sistema de prevención contra el coronavirus</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+
+                <div class="skills__content grid" data-content id="habilidades">
+                    <div class="skills__area">
+                        <h3 class="skills__title">Desarrollador Fronted</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-html5-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">HTML5</h3>
+                                        <span class="skills__level">60%</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-css3-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">50%</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">JS</h3>
+                                        <span class="skills__level">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-reactjs-fill"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__level">50%</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Bootstrap</h3>
+                                        <span class="skills__level">75%</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-git-commit-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__level">60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">Desarrollador Backend</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-database-2-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">PhpMyAdmin</h3>
+                                        <span class="skills__level">40%</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-window-2-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__level">10%</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-loader-2-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Java</h3>
+                                        <span class="skills__level">10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">Desarrollador Videojuegos 2D</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-gamepad-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Unity</h3>
+                                        <span class="skills__level">60%</span>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer container">
-
+        <span class="footer__copy">
+            © DevSilva. Todos los derechos reservados
+        </span>
     </footer>
     
     <script src=""></script>
