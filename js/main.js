@@ -48,6 +48,22 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+/*==================== BACK TOP ====================*/
+function goTop() {
+    window.addEventListener('scroll', () => {
+        const scroll = document.documentElement.scrollTop;
+        console.log(scroll);
+        const ButtonUp = document.querySelector('#buttom__up');
+
+        if (scroll >= 300){
+            ButtonUp.style.right = 20 + "px"
+        } else {
+            ButtonUp.style.right = -100 + "px"
+        }
+    })
+}
+
+goTop();
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -55,6 +71,7 @@ const sr = ScrollReveal({
     duration: 2500,
     delay: 400,
 })
+
 
 sr.reveal(`.profile__border`)
 sr.reveal(`.profile__name`, {delay: 500})

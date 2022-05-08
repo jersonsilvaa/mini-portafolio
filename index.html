@@ -10,7 +10,7 @@
     <title>Web-portafolio - DevSilva</title>
 </head>
 <body>
-    <header class="profile container">
+    <header class="profile container" id="home">
         <i class="ri-moon-line change-theme" id="theme-button"></i>
         <div class="profile__container grid">
             <div class="profile__data">
@@ -70,6 +70,8 @@
                     
                     <a target="_blank" rel="noopener noreferrer" href="https://m.me/loquendero9/" class="button button__small button__gray"><i class="ri-messenger-line"></i></a>
 
+                    <a href="#me" class="button button__small button__gray"><i class="ri-user-line"></i></a>
+                    
                     <a rel="noopener noreferrer" href="#contacto" class="button button__small button__gray"><i class="ri-mail-line"></i></a>
                 </div>
             </div>
@@ -222,10 +224,25 @@
                 </div>
             </div>
         </section>
+        <div class="line__separate" id="me">
+        </div>
+        <div class="container about__me">
+            <h1 class="form__container text__me">Acerca de mi</h1>
+            <img src="./img/img_about-me.jpg" alt="Imagen de programación" class="profile__border">
+            <div class="about-me">
+                <p>Soy desarrollador web, especialmente Fronted, desarrollador novato de videojuegos, usando el motor de Unity.
+                    Ultimamente he trabajado mucho en proyectos pequeños con React para prácticar.
+                    He usado lenguajes como C++ a un nivel muy básico, C# para programar en Unity, JS para páginas web, Python para hacer interfaces y conectar a base de datos al igual que Java
+                </p>
+            </div>
+        </div>
+        
         <br><br>
-        <form action="https://formsubmit.co/jerson.silva99@hotmail.com" method="post" class="form" id="contacto">
+        <div class="line__separate"></div>
+        <br>
+        <form action="https://formsubmit.co/jerson.silva99@hotmail.com" method="post" class="form " id="contacto">
             <div class="form__container">
-                    <h2 class="form__title">Contactáme</h2>
+                    <h2 class="form__title">Contactame</h2>
 
                     <div class="form__group">
                         <input type="text" name="Nombres" id="name" placeholder=" " class="form__input" required>
@@ -238,27 +255,17 @@
                         <span class="form__line"></span>
                     </div>
                     <div class="form__group">
-                        <textarea name="Mensaje" id="" cols="30" rows="10" class="form__input" required></textarea>
+                        <textarea name="Mensaje" id="" cols="30" rows="5" class="form__input" required></textarea>
                         <label for="message" class="form__label">Mensaje</label>
                         <span class="form__line"></span>
                         </div>
     
-                        <input type="submit" class="form__submit" value="Enviar">
+                        <div class="profile__buttons">
+                            <input type="submit" class="button form__submit" value="        Enviar        ">
+                        </div
                 </form>
-                </div>
-
-            <!--<label for="nombres y apellidos">Nombres y apellidos:</label>
-                <input type="text" name="Nombres y apellidos" class="form__name">
-                <br/>
-                <label for="email">Correo:</label>
-                <input type="email" name="Correo" class="form__email">
-                <br/>
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" class="mensaje" cols="30" rows="10"></textarea>
-                <br/>
-                <input type="submit" value="Enviar" class="button">-->>
-
-    </main>
+            </main>
+            <a href="#home"><i class="ri-mouse-line" id="buttom__up"></i></a>
 
     <footer class="footer container">
         <span class="footer__copy">
