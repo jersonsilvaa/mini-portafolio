@@ -70,7 +70,7 @@
                     
                     <a target="_blank" rel="noopener noreferrer" href="https://m.me/loquendero9/" class="button button__small button__gray"><i class="ri-messenger-line"></i></a>
 
-                    <a rel="noopener noreferrer" href="#" class="button button__small button__gray"><i class="ri-mail-line"></i></a>
+                    <a rel="noopener noreferrer" href="#contacto" class="button button__small button__gray"><i class="ri-mail-line"></i></a>
                 </div>
             </div>
 
@@ -223,10 +223,31 @@
             </div>
         </section>
         <br><br>
-        <div>
-            <h1 class="skills__title">Contactáme</h1>
-            <form action="https://formsubmit.co/jerson.silva99@hotmail.com" method="post" class="skills__title">
-                <label for="nombres y apellidos">Nombres y apellidos:</label>
+        <form action="https://formsubmit.co/jerson.silva99@hotmail.com" method="post" class="form" id="contacto">
+            <div class="form__container">
+                    <h2 class="form__title">Contactáme</h2>
+
+                    <div class="form__group">
+                        <input type="text" name="Nombres" id="name" placeholder=" " class="form__input" required>
+                        <label for="name" class="form__label">Nombres</label>
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" name="Correo" id="name" placeholder=" " class="form__input" required>
+                        <label for="email" class="form__label">Correo</label>
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form__group">
+                        <textarea name="Mensaje" id="" cols="30" rows="10" class="form__input" required></textarea>
+                        <label for="message" class="form__label">Mensaje</label>
+                        <span class="form__line"></span>
+                        </div>
+    
+                        <input type="submit" class="form__submit" value="Enviar">
+                </form>
+                </div>
+
+            <!--<label for="nombres y apellidos">Nombres y apellidos:</label>
                 <input type="text" name="Nombres y apellidos" class="form__name">
                 <br/>
                 <label for="email">Correo:</label>
@@ -235,10 +256,8 @@
                 <label for="mensaje">Mensaje:</label>
                 <textarea name="mensaje" class="mensaje" cols="30" rows="10"></textarea>
                 <br/>
-                <input type="submit" value="Enviar" class="button">
-            </form>
+                <input type="submit" value="Enviar" class="button">-->>
 
-        </div>
     </main>
 
     <footer class="footer container">
