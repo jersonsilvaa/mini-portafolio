@@ -12,6 +12,8 @@ Portafolio hecho en html con, css, js y scss.
 
 - Descarga de hoja de vida.
 
+Deploy: https://jersonsilvaa.github.io/mini-portafolio/
+
 
 Tutorial de mini-portafolio
 
